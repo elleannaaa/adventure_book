@@ -1,0 +1,110 @@
+/* Base styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Georgia', serif;
+    background: url('../images/page.png') repeat-y center top;
+    background-size: 100% auto;
+    background-color: #a47241; /* fallback if image fails */
+    color: white;
+  }
+  
+  /* Section layout */
+  .section-box {
+    max-width: 900px;
+    margin: 50px auto 30px auto;
+    padding: 40px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Titles */
+  h1 {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+  
+  /* Paragraphs */
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Haiku + image layout */
+  .haiku-pair {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .haiku-text {
+    flex: 1;
+    min-width: 260px;
+  }
+  
+  .haiku-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .haiku-image img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 12px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Next Page button */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto 60px auto;
+    padding: 0 30px;
+  }
+  
+  .nav-buttons .button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-buttons .button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }

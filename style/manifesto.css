@@ -1,0 +1,84 @@
+/* Base styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Georgia', serif;
+    background: url('../images/page.png') repeat-y center top;
+    background-size: 100% auto;
+    background-color: #a47241;
+    color: white;
+  }
+  
+  /* Center wrapper */
+  .page {
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+  }
+  
+  /* White bordered box */
+  .section-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 30px auto;  /* <- THIS centers it horizontally */
+    padding: 40px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 30px;
+  }
+  
+  /* Paragraphs */
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  strong {
+    font-weight: bold;
+    color: white;
+  }
+  
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto 60px auto;
+    padding: 0 30px;
+  }
+  
+  .nav-buttons .button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-buttons .button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }

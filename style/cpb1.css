@@ -1,0 +1,120 @@
+/* Base styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Georgia', serif;
+    background: url('../images/page.png') repeat-y center top;
+    background-size: 100% auto;
+    background-color: #a47241;
+    color: white;
+  }
+  
+  /* Wrapper */
+  .page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* White bordered content box */
+  .section-box {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    padding: 40px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtitle */
+  em {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 1.9em;
+  }
+  
+  /* Poem formatting */
+ 
+
+  .poem-block p {
+    margin-bottom: 30px;  /* increase stanza separation */
+    font-size: 3 em;
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto 60px auto;
+    padding: 0 30px;
+  }
+  
+  .nav-buttons .button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-buttons .button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* Two-column layout for poem + images */
+.section-box.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .poem-column {
+    flex: 2;
+    min-width: 300px;
+    font-size: 1.85em;
+  }
+  
+  .image-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  /* was center before */
+    gap: 20px;
+    padding-right: 20px;  /* add some breathing room */
+  }
+  
+  .image-column img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+
+  .poem-block {
+    font-size: 1.2em;
+    line-height: 1.8;
+  }

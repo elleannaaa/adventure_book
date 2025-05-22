@@ -1,0 +1,102 @@
+/* Reset and layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Georgia', serif;
+    background: url('../images/page.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+  }
+  
+  /* Page wrapper */
+  .page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  /* Content box (white border) */
+  .content-box {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 2px solid white;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 80vh;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Section title */
+  .section-title {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 30px;
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    color: white;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  /* Paragraphs */
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Italic thank you */
+  .thank-you {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  /* Links */
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* Navigation buttons below white box */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto 50px auto; /* tighter spacing above, more below */
+    padding: 10px 30px;
+  }
+  
+  .nav-buttons .button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-buttons .button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }

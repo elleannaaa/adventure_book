@@ -1,0 +1,36 @@
+/* Reset and full screen */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Cover background */
+  .cover-container {
+    background: url('../images/cover.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  /* Open button styling */
+  #openBook {
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #openBook:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }

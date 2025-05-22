@@ -1,0 +1,118 @@
+/* Base styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Georgia', serif;
+    background: url('../images/page.png') repeat-y center top;
+    background-size: 100% auto;
+    background-color: #a47241;
+    color: white;
+  }
+  
+  /* Layout wrapper */
+  .page {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Content box */
+  .content-box {
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  /* Titles */
+  .section-title {
+    text-align: center;
+    font-size: 2.3em;
+    margin-bottom: 30px;
+  }
+  
+  .poem-title {
+    margin-top: 50px;
+    font-size: 1.7em;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* Image */
+  .centered-image {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 100%;
+    border-radius: 12px;
+    border: 1px solid white;
+  }
+  
+  /* Haikus */
+  .haiku p {
+    font-style: italic;
+    line-height: 2;
+    margin-bottom: 25px;
+    text-align: center;
+    white-space: pre-line;
+    font-size: 1.2em;
+  }
+  
+  /* Navigation buttons */
+  .navigation {
+    display: flex;
+    justify-content: center; /* center the buttons */
+    gap: 20px; /* space between buttons */
+    max-width: 900px;
+    width: 90%;
+    margin: 30px auto 60px auto;
+    padding: 0 30px;
+  }
+  
+  .button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;      /* center the button row */
+    gap: 40px;                    /* space between buttons */
+    margin-top: 40px;             /* space above buttons */
+    margin-bottom: 60px;          /* space below buttons */
+  }
+  
+  .nav-buttons .button {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-buttons .button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+  }

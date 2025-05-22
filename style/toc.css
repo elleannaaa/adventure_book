@@ -1,0 +1,80 @@
+/* Reset and page setup */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Georgia', serif;
+    background: url('../images/page.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Main content box */
+  .toc-box {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid white;
+    padding: 40px;
+    width: 70%;
+    max-width: 700px;
+    color: white;
+    text-align: left;
+  }
+  
+  .toc-box h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  /* TOC list */
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+  }
+  
+  .toc-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .toc-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .toc-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Navigation buttons */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .prev-button,
+  .next-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }

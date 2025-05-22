@@ -1,0 +1,111 @@
+/* Base Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Georgia', serif;
+}
+
+/* HOME PAGE – Book Cover */
+.cover-container {
+  background: url('cover.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sticker {
+  width: 300px;
+  max-width: 80%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+#openBook {
+  position: absolute;
+  bottom: 8%;
+  right: 12%;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #6b4f3b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+#openBook:hover {
+  transform: scale(1.05);
+}
+
+/* INNER PAGES – Brown Paper Background */
+body.scrapbook-page {
+  background: url('page.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+  color: white; /* Default fallback text color */
+}
+
+/* White Scrollable Box */
+.section-box {
+  background: white;
+  color: black;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  z-index: 10;
+}
+
+.prev-button {
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+  z-index: 10;
+}
+
+.next-button, .prev-button {
+  background-color: #6b4f3b;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover, .prev-button:hover {
+  background-color: #8a664c;
+}
